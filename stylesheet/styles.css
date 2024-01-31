@@ -1,0 +1,204 @@
+@font-face {
+  font-family: Worksans;
+  src: url("../Resources/Fonts/WorkSans-Regular.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: SharpGrotesk;
+  src: url("../Resources/Fonts/SharpGrotesk-Medium.woff") format("truetype");
+}
+@font-face {
+  font-family: Worksansmed;
+  src: url("../Resources/Fonts/WorkSans-Medium.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Worksanssem;
+  src: url("../Resources/Fonts/WorkSans-SemiBold.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  /* Assigning whole page margin and padding 0 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* container properties defined to be used in html webpage */
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 15px 15px;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    padding: 0 25px;
+  }
+}
+/* Generalized property for all anchor tags */
+a {
+  text-decoration: none;
+}
+/* generalized property for button and anchor tag hover */
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+/* main tag properties */
+main {
+  position: relative;
+  background-color: #fff7f0;
+}
+.main {
+  padding-bottom: 60px;
+}
+/* properties for mainleft div */
+.mainleft {
+  width: 70%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+/* properties for line(image) */
+.line {
+  margin-bottom: 10px;
+}
+/* properties for topleft div in main */
+.topleft {
+  display: flex;
+  flex-direction: column;
+}
+/* properties for images in topleft */
+.topleft > img {
+  width: 200px;
+}
+.topleftheading {
+  font-family: worksansmed;
+  font-size: 30px;
+}
+/* setting image in main right to absolute */
+.mainright {
+  position: absolute;
+  right: 0;
+  top: 135px;
+}
+.leftheading {
+  margin-top: 20px;
+  padding: 5px;
+  font-family: SharpGrotesk;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+.maincontent {
+  display: flex;
+  justify-content: space-between;
+}
+/* signup div */
+.signup {
+  font-family: worksans;
+}
+.signuptext {
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* properties for input box */
+.signup #email {
+  margin-top: 20px;
+  width: 350px;
+  height: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+/* imput box placeholder properties */
+.signup #email::placeholder {
+  color: rgba(128, 127, 127, 0.903);
+  font-family: worksans;
+}
+/* input box submit */
+.signup #submit {
+  font-family: worksans;
+  width: 100px;
+  height: 40px;
+  padding: auto 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #ffd55f;
+  border: 1px solid #000;
+}
+/* footer */
+footer {
+  height: 600px;
+  font-family: worksans;
+  background-color: #000;
+  padding: 80px;
+}
+.footer {
+  background-image: url(/Resources/Icons/full-svg\ 2.svg);
+  /* since black footer image was not given, i took the parallel image from logo and edited the svg file to change the color */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.footertop {
+  display: flex;
+}
+/* footer left part properties */
+.hire {
+  width: 37%;
+  padding: 0 30px;
+}
+/* footer left heading properties */
+.hire-heading {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+/* div with social icons */
+.hireicons {
+  display: flex;
+}
+.hireicons > img {
+  margin-right: 25px;
+}
+/* generalized properties for all headings in footer */
+.footer-heading {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+/* generalized properties for all divs with links in footer */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.links > a {
+  /* generalized properties for all links in footer */
+  left: 0;
+  color: rgba(208, 208, 208, 0.848);
+  margin: 12px 0;
+}
+.candidate,
+.company,
+.parallel {
+  width: 21%;
+}
+/* footer bottom banner */
+.footerbottom {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(171, 170, 170, 0.848);
+  font-size: 14px;
+}
+.policies {
+  width: 18%;
+  display: flex;
+  justify-content: space-between;
+}

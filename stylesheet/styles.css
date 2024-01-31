@@ -135,7 +135,7 @@ footer {
   padding: 80px;
 }
 .footer {
-  background-image: url(/Resources/Icons/full-svg\ 2.svg);
+  background-image: url(Resources/Icons/full-svg\ 2.svg);
   /* since black footer image was not given, i took the parallel image from logo and edited the svg file to change the color */
   background-position: center;
   background-size: contain;
